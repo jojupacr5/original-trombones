@@ -1,0 +1,125 @@
+body{
+    background-color: #eee;
+}
+nav{
+    background-color: #eee;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.links a{
+    color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+h1{
+    margin-top: 100px;
+}
+form{
+    width: 300px;
+    margin: 0 auto;
+}
+form #submit{
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+section{
+    padding: 3em 0;
+}
+section p{
+    margin-bottom: 30px;
+}
+.icons{
+    display: block;
+    color: orange;
+    text-align: center;
+}
+.video{
+    margin: 0 auto;
+}
+.card{
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-color: black;
+}
+.card-header{
+    background-color: #ddd;
+}
+.card p{
+    margin: 10px;
+}
+.card a{
+    margin: 20px 0 0;
+}
+footer{
+    background-color: #ddd;
+}
+footer p{
+    text-align: right;
+    margin: 0;
+}
+.footer_nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer_nav a{
+    height: 30px;
+    color: black;
+    text-decoration: none;
+}
+footer p{
+    font-size: 15px;
+    padding-right: .8em;
+}
+@media (max-width: 575.98px) { 
+    .links{
+        flex-direction: column;
+    }
+    .links a{
+        padding: 0;
+    }
+    .icons{
+        display: none;
+    }
+    #features h4, #features p{
+        text-align: center;
+    }
+  }
+  
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .icons{
+        display: none;
+    }
+    #features h4, #features p{
+        text-align: center;
+    }
+  }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .video{
+        width: 600px;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .video{
+        width: 600px;
+    }
+}
+  
+@media (min-width: 1200px) { 
+    #features{
+        padding: 4em 5em 0;
+    }
+    .video{
+        width: 600px;
+    }
+    .card_container{
+        padding: 0 5em;
+    }
+}
